@@ -44,13 +44,14 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    public void LevelSelect() //vis hvor man kan vælge lvl kategori
+    public void LevelSelect()
     {
-        if (!showLevelSelect)
-        {
-            showLevelSelect = true;
-            animatorShowOptions.SetBool("ShowCategory", showLevelSelect);
-        }
+        //if (!showLevelSelect)
+        //{
+        //    showLevelSelect = true;
+        //    animatorShowOptions.SetBool("ShowCategory", showLevelSelect);
+        //}
+        PlayGame();
     }
 
     public void CloseLevelSelect()
